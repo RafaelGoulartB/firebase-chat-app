@@ -6,7 +6,7 @@
    </a> 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/RafaelGoulartB/firebase-chat-app?color=5ccb68">
 
-  <img src="https://img.shields.io/badge/version-7.0.0-5ccb68.svg?cacheSeconds=2592000" />
+  <img src="https://img.shields.io/badge/version-1.0.0-5ccb68.svg?cacheSeconds=2592000" />
   <a href="https://github.com/RafaelGoulartB/firebase-chat-app#readme">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-5ccb68.svg" target="_blank" />
   </a>

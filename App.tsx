@@ -1,12 +1,17 @@
-import { StatusBar } from 'expo-status-bar'
 import React from 'react'
-import { Text, View } from 'react-native'
+import { NavigationContainer } from '@react-navigation/native'
+import { Provider as PaperProvider } from 'react-native-paper'
+import { theme } from './src/styles/theme'
+import Routes from './src/routes'
+import { StatusBar } from 'expo-status-bar'
 
 export default function App() {
   return (
-    <View>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <PaperProvider theme={theme}>
+      <NavigationContainer>
+        <Routes />
+      </NavigationContainer>
+      <StatusBar style="dark" />
+    </PaperProvider>
   )
 }

@@ -7,8 +7,20 @@ const Stack = createStackNavigator()
 
 const Routes: React.FC = () => {
   return (
-    <Stack.Navigator initialRouteName="Home">
-      <Stack.Screen name="Home" component={Home} />
+    <Stack.Navigator
+      initialRouteName="Chat"
+      screenOptions={{
+        headerTintColor: 'white',
+        headerStyle: { backgroundColor: '#208b82' }
+      }}
+    >
+      <Stack.Screen
+        name="Home"
+        component={Home}
+        options={{
+          title: 'Chats'
+        }}
+      />
       <Stack.Screen name="Chat" component={Chat} />
     </Stack.Navigator>
   )

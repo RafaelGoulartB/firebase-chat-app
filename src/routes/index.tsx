@@ -1,23 +1,16 @@
 import React from 'react'
-import { Button, Dialog, Portal } from 'react-native-paper'
+import { createStackNavigator } from '@react-navigation/stack'
+import Home from '../screens/home'
+import Chat from '../screens/Chat'
+
+const Stack = createStackNavigator()
 
 const Routes: React.FC = () => {
-  const [visible, setVisible] = React.useState(false)
-  const showDialog = () => setVisible(true)
-  const hideDialog = () => setVisible(false)
-
   return (
-    <>
-      <Button onPress={showDialog}>Say Hello!</Button>
-      <Portal>
-        <Dialog visible={visible} onDismiss={hideDialog}>
-          <Dialog.Title>Hello World</Dialog.Title>
-          <Dialog.Actions>
-            <Button onPress={hideDialog}>Done</Button>
-          </Dialog.Actions>
-        </Dialog>
-      </Portal>
-    </>
+    <Stack.Navigator initialRouteName="Home">
+      <Stack.Screen name="Home" component={Home} />
+      <Stack.Screen name="Chat" component={Chat} />
+    </Stack.Navigator>
   )
 }
 

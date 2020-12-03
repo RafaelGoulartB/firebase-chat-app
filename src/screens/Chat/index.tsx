@@ -1,8 +1,14 @@
 import React from 'react'
 import { Text } from 'react-native'
 
-const Chat: React.FC = () => {
-  return <Text>Chat</Text>
+type Props = {
+  route: any
+}
+
+const Chat: React.FC<Props> = ({ route }: Props) => {
+  const { id } = route.params
+
+  return <Text>{id}</Text>
 }
 
 export default Chat

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Text } from 'react-native'
 import { Avatar, Divider, List } from 'react-native-paper'
 import { useNavigation } from '@react-navigation/native'
 
@@ -25,9 +24,7 @@ const ChatItem: React.FC<Props> = ({ id, title, imageSrc }: Props) => {
           />
         )}
         onPress={() => navigation.navigate('Chat', { id })}
-      >
-        <Text>Hello</Text>
-      </List.Item>
+      />
       <Divider />
     </>
   )

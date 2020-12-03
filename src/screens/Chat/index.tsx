@@ -1,8 +1,9 @@
+import { Route } from '@react-navigation/native'
 import React, { useState, useCallback, useEffect } from 'react'
 import { GiftedChat, IMessage } from 'react-native-gifted-chat'
 
 interface Props {
-  route: any
+  route: Route<'Chat', { id: string }>
 }
 
 const Chat: React.FC<Props> = ({ route }: Props) => {

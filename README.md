@@ -40,9 +40,8 @@
 - [Contributing](#tada-contributing)
 - [License](#closed_book-license)
 
-<div>
-  <img src="./.github/screenshots/screenshot-1.jpg" width="220">
-  <img src="./.github/screenshots/screenshot-2.jpg" width="220">
+<div align="center">
+  <img src="./.github/screenshots/screenshot-1.jpg" width="280">
 </div>
 
 # :computer: Technologies
